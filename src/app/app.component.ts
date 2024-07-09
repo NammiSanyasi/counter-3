@@ -12,8 +12,14 @@ export class AppComponent {
   isEven ="Even";
   checkEvenOdd()
   {
-    if (this.count % 2 == 1) { this.isEven = "odd"; this.evenFlag = false; }
-    else { this.isEven = "Even";this.evenFlag=true }
+    if (this.count % 2 == 1) { 
+      this.isEven = "odd";
+       this.evenFlag = false; 
+      }
+    else 
+    { this.isEven = "Even";
+      this.evenFlag=true ;
+    }
   }
   incr() {
     if (this.count >= 20) {
@@ -26,7 +32,13 @@ export class AppComponent {
 
   }
   decr() {
+   if (this.count <=0){
+    this.isDisabled=true
+   }
+   else{
     this.count--;
-  this.checkEvenOdd();}
+   }
+  this.checkEvenOdd();
+   }
   reset() { this.count = 0; }
 }
