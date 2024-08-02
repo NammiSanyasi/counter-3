@@ -1,24 +1,9 @@
-/*h1{text-align: center;}
-.counter{
-    height: 50vh;
-    width: 50vw;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.count{font-size: 48px;}
-button{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
-}
-button:disabled{
-    background-color: red;
-}*/
+
+
+
+
+
+
 
 /* Global Styles */
 * {
@@ -39,14 +24,14 @@ button:disabled{
     padding: 20px;
   }
   
-  /* Title */
+  
   h1 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 20px;
   }
   
-  /* Counter Container */
+  
   .counter {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -72,12 +57,12 @@ button:disabled{
     color: #0056b3;
   }
   
-  /* Even flag color */
-  .gr {
+  
+  p {
     color: green;
   }
   
-  /* Buttons */
+  
   .counter button {
     padding: 10px 20px;
     border: none;
@@ -124,5 +109,88 @@ button:disabled{
   
   .counter button:nth-child(1):hover {
     background-color: #218838;
+  }
+  
+
+
+
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .counter {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .counter p {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .counter .count {
+    font-weight: bold;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  button:active:not(:disabled) {
+    background-color: #004085;
+  }
+  
+  .gr {
+    color: green;
+  }
+  
+  /* Additional styles for responsive design */
+  @media (max-width: 400px) {
+    .counter {
+      padding: 15px;
+    }
+  
+    button {
+      padding: 8px 12px;
+      font-size: 0.9em;
+    }
   }
   

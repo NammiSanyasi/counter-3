@@ -8,37 +8,49 @@ import { Component } from '@angular/core';
 export class AppComponent {
   count: number = 0;
   isDisabled = false;
-  evenFlag = true;
   isEven ="Even";
-  checkEvenOdd()
-  {
-    if (this.count % 2 == 1) { 
-      this.isEven = "odd";
-       this.evenFlag = false; 
-      }
-    else 
-    { this.isEven = "Even";
-      this.evenFlag=true ;
-    }
-  }
-  incr() {
-    if (this.count >= 20) {
-      this.isDisabled=true
-    }
-    else {
-       this.count++;
-    }
-   this.checkEvenOdd()
 
-  }
+
+  checkEvenOdd()
+  {    
+        if (this.count % 2 == 1)
+          { 
+              this.isEven = "odd";
+          }
+        else 
+          {
+             this.isEven = "Even";
+          }
+    }
+  incr() 
+    {
+        if (this.count >= 20) 
+          {
+            this.isDisabled=true
+          }
+        else 
+          {
+             this.count++;
+          }
+      this.checkEvenOdd();
+
+    }
+
+
   decr() {
    if (this.count <=0){
     this.isDisabled=true
-   }
-   else{
+    }
+  else{
     this.count--;
    }
   this.checkEvenOdd();
-   }
-  reset() { this.count = 0; }
+  }
+
+  reset(){ 
+    this.count = 0; 
+    
+  }
 }
+
+
